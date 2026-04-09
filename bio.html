@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bio — Jason Kurt Paulsen</title>
+  <meta name="description" content="About Jason Kurt Paulsen — Director of Technology, AI & Digital Transformation">
+  <meta property="og:title" content="Bio — Jason Kurt Paulsen">
+  <meta property="og:description" content="Technology leader focused on AI-enabled transformation and enterprise platform strategy.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jasonkurtpaulsen.com/bio">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+
+    :root {
+      --bg: #0e0e0e;
+      --surface: #161616;
+      --text-primary: #f0ece4;
+      --text-secondary: #9a9590;
+      --accent: #c4a87c;
+      --accent-dim: rgba(196,168,124,0.12);
+      --rule: rgba(196,168,124,0.18);
+      --serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+
+    html { font-size: 16px; }
+
+    body {
+      background: var(--bg);
+      color: var(--text-primary);
+      font-family: var(--sans);
+      min-height: 100vh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 4rem 2rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Layout ───────────────────────────────── */
+    .bio-page {
+      width: 100%;
+      max-width: 600px;
+    }
+
+    /* ── Back link ────────────────────────────── */
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      text-decoration: none;
+      margin-bottom: 3rem;
+      transition: color 0.2s ease;
+    }
+
+    .back-link:hover {
+      color: var(--accent);
+    }
+
+    .back-arrow {
+      width: 14px;
+      height: 14px;
+      transition: transform 0.2s ease;
+    }
+
+    .back-link:hover .back-arrow {
+      transform: translateX(-2px);
+    }
+
+    /* ── Header ───────────────────────────────── */
+    .bio-header {
+      margin-bottom: 2.5rem;
+    }
+
+    .bio-name {
+      font-family: var(--serif);
+      font-size: 2.2rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      color: var(--text-primary);
+      line-height: 1.15;
+    }
+
+    .bio-title {
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-top: 0.6rem;
+    }
+
+    .divider {
+      width: 48px;
+      height: 1px;
+      background: var(--accent);
+      margin: 2.5rem 0;
+      opacity: 0.5;
+    }
+
+    /* ── Body text ────────────────────────────── */
+    .bio-body p {
+      font-family: var(--serif);
+      font-size: 1.15rem;
+      font-weight: 400;
+      line-height: 1.75;
+      color: var(--text-primary);
+      margin-bottom: 1.5rem;
+      opacity: 0.92;
+    }
+
+    .bio-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ── Footer ───────────────────────────────── */
+    .bio-footer {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .footer-location {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      color: var(--text-secondary);
+      opacity: 0.5;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 1.2rem;
+    }
+
+    .footer-links a {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+
+    /* ── Responsive ───────────────────────────── */
+    @media (max-width: 480px) {
+      body { padding: 2.5rem 1.25rem; }
+      .bio-name { font-size: 1.8rem; }
+      .bio-body p { font-size: 1.05rem; }
+    }
+
+    /* ── Entrance ─────────────────────────────── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .bio-page { animation: fadeUp 0.6s ease-out both; }
+  </style>
+</head>
+<body>
+  <main class="bio-page">
+
+    <a class="back-link" href="index.html">
+      <svg class="back-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Back
+    </a>
+
+    <header class="bio-header">
+      <h1 class="bio-name">Jason Kurt Paulsen</h1>
+      <p class="bio-title">Director of Technology &middot; AI &amp; Digital Transformation &middot; North America</p>
+    </header>
+
+    <div class="divider"></div>
+
+    <article class="bio-body">
+      <p>Jason Kurt Paulsen is a technology leader focused on driving AI-enabled transformation and enterprise platform strategy across North America. As Director of Technology at Estée Lauder Companies, he leads initiatives spanning omnichannel commerce, identity and access, enterprise data and analytics, and AI-driven capabilities—supporting tens of thousands of users and large-scale operational environments.</p>
+
+      <p>His career began unusually early, stepping into leadership roles in his early twenties where he managed large-scale customer operations and built support organizations from the ground up. By age 23, he was responsible for a 180-person operation, shaping both the structure and performance of the business. During this time, he also gained early exposure to emerging technologies such as virtualization, helping to form a foundation in how systems scale and evolve.</p>
+
+      <p>Over time, Jason developed a hybrid career across infrastructure, product, and business leadership—working across enterprise organizations, high-growth environments, and startups. He has led digital commerce transformations, built training and operational platforms for global retail organizations, and partnered with brands and leadership teams to modernize how technology supports the business.</p>
+
+      <p>He is particularly focused on the practical adoption of AI within large organizations. His perspective is that AI is not primarily a technology challenge, but an operating model shift—requiring new ways of working, decision-making, and ownership across teams. He is actively involved in advancing AI capabilities within the enterprise, with an emphasis on real-world application and measurable impact.</p>
+    </article>
+
+    <footer class="bio-footer">
+      <span class="footer-location">New York City</span>
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/jpaulsen25" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:jasonkurtpaulsen@gmail.com">Email</a>
+      </div>
+    </footer>
+
+  </main>
+</body>
+</html>
